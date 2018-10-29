@@ -12,8 +12,6 @@ const morgan = require('morgan');
 const index = require('./routes/index');
 const post = require('./routes/post');
 
-
-
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 

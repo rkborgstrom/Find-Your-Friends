@@ -38,43 +38,43 @@
                 </h4>
               </strong>
 
-              <section class="container">
+
+              <section class="row">
+                <section class="col">
+                  <h5>
+                    <strong>I have room for:</strong>
+                    <%= data.passengers %>
+                  </h5>
+                </section>
+
+                <section class="col">
+                  <h5>
+                    <strong>Contact:</strong>
+                    <%= data.phone_number %>
+                  </h5>
+                </section>
+
+                <section class="w-100"></section>
                 <section class="row">
                   <section class="col">
                     <h5>
-                      <strong>I have room for:</strong>
-                      <%= data.passengers %>
+                      <strong>Date Posted:</strong>
+                      <%= data.date.toDateString() %>
                     </h5>
                   </section>
-
-                  <section class="col pr-5">
+                  <section class="col">
                     <h5>
-                      <strong>Contact:</strong>
-                      <%= data.phone_number %>
+                      <strong>Time Posted:</strong>
+                      <%= data.time %>
                     </h5>
                   </section>
-
-                  <section class="w-100"></section>
-                  <section class="row">
-                    <section class="col pl-4">
-                      <h5>
-                        <strong>Date Posted:</strong>
-                        <%= data.date.toDateString() %>
-                      </h5>
-                    </section>
-                    <section class="col pl-5">
-                      <h5>
-                        <strong>Time Posted:</strong>
-                        <%= data.time %>
-                      </h5>
-                    </section>
-                  </section>
-                  <h5>
-                    <strong>Message:</strong>
-                    <%= data.message %>
-                  </h5>
                 </section>
+                <h5>
+                  <strong>Message:</strong>
+                  <%= data.message %>
+                </h5>
               </section>
+
           </section>
         </section>
       </section>
