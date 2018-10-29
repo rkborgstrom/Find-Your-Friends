@@ -1,0 +1,73 @@
+<% include partials/header %>
+
+
+<section class="center">
+    <h2 class="what">I want to: </h2>
+    <section class="buttons">
+      <a href="/index" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">See Riders</a>
+      <a href="/post" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Post Where I'm Going</a>
+    </section>
+  </section>
+
+<section class="form-bg d-flex justify-content-center">
+  <form class="needs-validation" novalidate action="/post" method="POST">
+    <div class="form-row">
+
+      <div class="col-md-6 mb-3">
+        <label for="full_name">Full Name</label>
+        <input type="text" class="form-control" id="full_name" placeholder="e.g. John Doe" name="full_name" required>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label for="mountain">Mountain</label>
+        <input type="text" class="form-control" id="mountain" placeholder="e.g. Park City Mountain" name="mountain"
+          required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationCustom03">Message:</label>
+        <input type="text" class="form-control" id="message" name="message" placeholder="e.g. Have room for 1 more in my car." required>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <label for="date">When are you going?</label>
+        <input type="date" class="form-control" id="date" name="date" placeholder="Date" required>
+        <div class="invalid-feedback">
+          Please provide a valid state.
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <label for="time">What time are you leaving?</label>
+        <input type="time" class="form-control" id="time" name="time" required>
+        <div class="invalid-feedback">
+          Please provide a valid zip.
+        </div>
+
+      </div>
+      <div class="input-group col-md-6 mb-3">
+        <label for="passengers">I have room for: &nbsp </label>
+        <select class="custom-select" name="passengers" id="passengers">
+          <option selected>Choose...</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <div class="input-group-append">
+          <label class="input-group-text" for="passengers">Options</label>
+        </div>
+      </div>
+
+    </div>
+
+
+    <button class="btn btn-primary" type="submit">Send it</button>
+</section>
+</form>
+</section>
+
+
+<% include partials/footer %>

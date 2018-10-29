@@ -8,7 +8,7 @@
   <h2 class="what">I want to: </h2>
   <section class="buttons">
     <a href="/index" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">See Riders</a>
-    <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Post Where I'm Going</a>
+    <a href="/post" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Post Where I'm Going</a>
   </section>
 </section>
 
@@ -18,7 +18,7 @@
 <main class="container">
 
   <section class="row">
-    <% for(data of all_data) { %>
+    <% for(data of all_data.reverse()) { %>
     <section class="col-container">
       <section class="col">
         <section class="card">

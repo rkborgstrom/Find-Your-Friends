@@ -10,6 +10,8 @@ const port = process.env.PORT || 8000;
 const knex = require('knex')(config);
 const morgan = require('morgan');
 const index = require('./routes/index');
+const post = require('./routes/post');
+
 
 
 app.set('views', path.join(__dirname, 'views'));
@@ -31,6 +33,7 @@ app.get('/', (req, res, next) => {
 })
 
 app.use('/index', index);
+app.use(post);
 
 app.use((_req, res) => {
     res.sendStatus(404);
