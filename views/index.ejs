@@ -29,17 +29,18 @@
                 <h1 class="d-flex justify-content-center" style="color: #318ac4;">
                   <%= data.full_name %>
                 </h1>
-
+                <hr>
                 <h4>
                   <strong class="mountain">Mountain: &nbsp
                   <i>
                     <%= data.mountain %>
+                    <hr>
                   </i>
                 </h4>
               </strong>
+          
 
-
-              <section class="row">
+     
                 <section class="col">
                   <h5>
                     <strong>I have room for:</strong>
@@ -49,31 +50,37 @@
 
                 <section class="col">
                   <h5>
+                      <hr>
                     <strong>Contact:</strong>
                     <%= data.phone_number %>
                   </h5>
+             
                 </section>
 
                 <section class="w-100"></section>
                 <section class="row">
                   <section class="col">
+                    <hr>
                     <h5>
                       <strong>Date Posted:</strong>
                       <%= data.date.toDateString() %>
                     </h5>
+                    <hr>
                   </section>
                   <section class="col">
                     <h5>
+                        <hr>
                       <strong>Time Posted:</strong>
                       <%= data.time %>
                     </h5>
+                    <hr>
                   </section>
                 </section>
                 <h5>
                   <strong>Message:</strong>
                   <%= data.message %>
                 </h5>
-              </section>
+           
 
           </section>
         </section>
