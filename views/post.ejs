@@ -18,10 +18,12 @@
         <input type="text" class="form-control" id="full_name" placeholder="e.g. John Doe" name="full_name" required>
       </div>
 
+      
       <div class="col-md-4 mb-3">
         <label for="mountain">Mountain</label>
         <input type="text" class="form-control" id="mountain" placeholder="e.g. Breckenridge" name="mountain" required>
       </div>
+
 
       <div class="col-md-4 mb-3">
         <label for="phone_number">Phone Number</label>
@@ -55,14 +57,17 @@
       <label for="passengers">I have room for: &nbsp </label>
       <select class="custom-select" name="passengers" id="passengers">
         <option selected>Choose...</option>
+        <option value="0">0</option>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
       </select>
     </div>
-
+    <hr>
     <button class="btn btn-primary" type="submit">Send it</button>
+    <hr>
+    <hr>
     <br>
 </section>
 </form>
