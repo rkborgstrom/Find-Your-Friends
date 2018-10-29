@@ -1,81 +1,88 @@
 <% include partials/header %>
 
-<section class="contain">
-  <section class="title">
-    <br>
-    <h1>Where Yo Friends At?</h1>
-    <br>
+<section class="title">
+  <h1>Where Yo Friends At?</h1>
+</section>
 
+<section class="center">
+  <h2 class="what">I want to: </h2>
+  <section class="buttons">
+    <a href="/index" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">See Riders</a>
+    <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Post Where I'm Going</a>
   </section>
-  <main class="container-fluid bg d-flex">
+</section>
 
-    <section class="row">
-      <% for(data of all_data) { %>
-      <section class="col-container">
-        <section class="col">
-          <section class="card">
-            <section class="card-body">
-              <h4 class="card-title">
 
-                <strong>
-                  <h1 class="d-flex justify-content-center" style="color: #318ac4;">
-                    <%= data.full_name %>
-                  </h1>
 
-                  <h4 class="pl-4">
-                    Mountain:
-                    <i>
-                      <%= data.mountain %>
-                    </i>
-                  </h4>
-                </strong>
 
-                <section class="container">
-                  <section class="row pl-2">
-                    <section class="col">
+<main class="container">
+
+  <section class="row">
+    <% for(data of all_data) { %>
+    <section class="col-container">
+      <section class="col">
+        <section class="card">
+          <section class="card-body">
+            <h4 class="card-title">
+
+              <strong>
+                <h1 class="d-flex justify-content-center" style="color: #318ac4;">
+                  <%= data.full_name %>
+                </h1>
+
+                <h4>
+                  <strong>Mountain:</strong>
+                  <i>
+                    <%= data.mountain %>
+                  </i>
+                </h4>
+              </strong>
+
+              <section class="container">
+                <section class="row">
+                  <section class="col">
+                    <h5>
+                      <strong>I have room for:</strong>
+                      <%= data.passengers %>
+                    </h5>
+                  </section>
+
+                  <section class="col pr-5">
+                    <h5>
+                      <strong>Contact:</strong>
+                      <%= data.phone_number %>
+                    </h5>
+                  </section>
+
+                  <section class="w-100"></section>
+                  <section class="row">
+                    <section class="col pl-4">
                       <h5>
-                        <strong>Message:</strong>
-                        <%= data.message %>
-                      </h5>
-                    </section>
-
-                    <section class="col">
-                      <h5>
-                        <strong>I have room for:</strong>
-                        <%= data.passengers %>
-                      </h5>
-                    </section>
-
-                    <section class="col">
-                      <h5>
-                        <strong>Contact:</strong>
-                        <%= data.phone_number %>
-                      </h5>
-                    </section>
-
-                    <section class="w-100"></section>
-                    <section class="col">
-                      <h5>
-                        <strong>Date:</strong>
+                        <strong>Date Posted:</strong>
                         <%= data.date.toDateString() %>
                       </h5>
                     </section>
-
-                    <section class="col">
+                    <section class="col pl-5">
                       <h5>
-                        <strong>Time:</strong>
+                        <strong>Time Posted:</strong>
                         <%= data.time %>
                       </h5>
                     </section>
                   </section>
+                  <h5>
+                    <strong>Message:</strong>
+                    <%= data.message %>
+                  </h5>
                 </section>
-            </section>
+              </section>
           </section>
         </section>
       </section>
-      <%}%>
+      <br>
     </section>
-</section>
+    <%}%>
+  </section>
+  </section>
 </main>
 </section>
 

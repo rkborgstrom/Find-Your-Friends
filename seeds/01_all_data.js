@@ -12,6 +12,20 @@ exports.seed = function (knex, Promise) {
         date: '11/09/2018',
         time: '5:20',
         phone_number: '815-341-6665'
-      }]);
+      },
+      {
+        full_name: 'Jake Capko',
+        mountain: 'Keystone',
+        message: 'Leaving at 9am tomorrow and can fit 1 other',
+        passengers: 1,
+        time_leaving: 'around 9am',
+        date: '11/09/2018',
+        time: '6:45',
+        phone_number: '815-784-3443'
+      }
+    
+    
+    
+    ]);
     });
 };
