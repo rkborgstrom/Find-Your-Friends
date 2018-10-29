@@ -14,7 +14,7 @@ exports.seed = function (knex, Promise) {
         phone_number: '815-341-6665'
       },
       {
-        full_name: 'Jake Capko',
+        full_name: 'Rick Steves',
         mountain: 'Keystone',
         message: 'Leaving at 9am tomorrow and can fit 1 other',
         passengers: 1,
