@@ -30,65 +30,66 @@
                   <%= data.full_name %>
                 </h1>
                 <hr>
+
                 <h4>
                   <strong class="mountain">Mountain: &nbsp
-                  <i>
-                    <%= data.mountain %>
-                    <hr>
-                  </i>
-                </h4>
-              </strong>
-          
 
-     
+                    <i>
+                      <%= data.mountain %>
+                    </i>
+
+                </h4>
+                <hr>
+              </strong>
+
+
+              <section class="row">
                 <section class="col">
                   <h5>
+                    <hr>
                     <strong>I have room for:</strong>
                     <%= data.passengers %>
+                    <hr>
                   </h5>
                 </section>
 
                 <section class="col">
                   <h5>
-                      <hr>
+                    <hr>
                     <strong>Contact:</strong>
                     <%= data.phone_number %>
+                    <hr>
                   </h5>
-             
                 </section>
 
                 <section class="w-100"></section>
                 <section class="row">
                   <section class="col">
-                    <hr>
                     <h5>
                       <strong>Date Posted:</strong>
                       <%= data.date.toDateString() %>
                     </h5>
-                    <hr>
                   </section>
                   <section class="col">
                     <h5>
-                        <hr>
                       <strong>Time Posted:</strong>
                       <%= data.time %>
                     </h5>
-                    <hr>
                   </section>
                 </section>
-                <h5>
+                <h5>   <hr>
                   <strong>Message:</strong>
                   <%= data.message %>
-                </h5>
-           
+                  <hr> </h5>
 
+
+              </section>
           </section>
         </section>
+        <br>
       </section>
-      <br>
+      <%}%>
     </section>
-    <%}%>
-  </section>
   </section>
 </main>
 </section>
