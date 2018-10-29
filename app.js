@@ -9,6 +9,7 @@ const app = express();
 const port = process.env.PORT || 8000;
 const knex = require('knex')(config);
 const morgan = require('morgan');
+const index = require('./routes/index');
 
 
 app.set('views', path.join(__dirname, 'views'));
@@ -24,9 +25,12 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
+
 app.get('/', (req, res, next) => {
-    res.render('index', {user_report: []});
+    res.render('index', {all_data: []});
 })
+
+app.use('/index', index);
 
 app.use((_req, res) => {
     res.sendStatus(404);
