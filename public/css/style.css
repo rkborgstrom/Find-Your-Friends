@@ -14,7 +14,10 @@ body {
 .navbar {
     display: flex;
     justify-content: center;
-    opacity: 0.6;
+}
+
+nav {
+    background-color: #71a9ba !important;
 }
 
 .title {
