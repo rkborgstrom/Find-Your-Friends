@@ -14,12 +14,8 @@ body {
 .navbar {
     display: flex;
     justify-content: center;
-    opacity: 0.8;
-    font-family: batavia;
-    color: white;
-    font-size: 80px;
+    opacity: 0.6;
 }
-
 
 .title {
     color: white;
@@ -60,7 +56,6 @@ h6 {
     justify-content: center;
 }
 
-
 .form-bg {
     padding-top: 100px;
     padding-left: 70px;
@@ -70,4 +65,3 @@ h6 {
     min-height: 100vh;
     opacity: 0.8;
 }
-
