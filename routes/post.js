@@ -22,6 +22,7 @@ router.post('/post', (req, res, next) => {
         date: req.body.date,
         time: req.body.time,
         phone_number: req.body.phone_number,
+        insta: req.body.insta
     }, '*')
   
     .then((all_data) => {

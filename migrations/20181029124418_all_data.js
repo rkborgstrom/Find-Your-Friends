@@ -9,6 +9,7 @@ exports.up = function (knex, Promise) {
         table.date('date');
         table.time('time')
         table.string('phone_number');
+        table.string('insta');
     });
 };
 

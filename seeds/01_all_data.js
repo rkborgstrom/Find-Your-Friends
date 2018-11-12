@@ -11,7 +11,8 @@ exports.seed = function (knex, Promise) {
         time_leaving: 'around 7am-7:30am',
         date: '11/09/2018',
         time: '5:20',
-        phone_number: '815-341-6665'
+        phone_number: '815-341-6665',
+        insta: '_r_y_a_n_b_'
       },
       {
         full_name: 'Rick Steves',
@@ -21,7 +22,8 @@ exports.seed = function (knex, Promise) {
         time_leaving: 'around 9am',
         date: '11/09/2018',
         time: '6:45',
-        phone_number: '815-784-3443'
+        phone_number: '815-784-3443',
+        insta: 'ricksteveseurope'
       }
     
     
