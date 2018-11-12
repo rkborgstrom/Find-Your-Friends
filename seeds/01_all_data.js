@@ -25,9 +25,6 @@ exports.seed = function (knex, Promise) {
         phone_number: '815-784-3443',
         insta: 'ricksteveseurope'
       }
-    
-    
-    
     ]);
     });
 };

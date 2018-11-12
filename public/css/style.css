@@ -12,8 +12,14 @@ body {
 }
 
 .navbar {
+    display: flex;
+    justify-content: center;
     opacity: 0.8;
+    font-family: batavia;
+    color: white;
+    font-size: 80px;
 }
+
 
 .title {
     color: white;
