@@ -17,7 +17,7 @@ body {
 }
 
 nav {
-    background-color: #71a9ba !important;
+    background-color: #7db6c5 !important;
 }
 
 .title {
@@ -67,4 +67,14 @@ h6 {
     height: 100%;
     min-height: 100vh;
     opacity: 0.8;
+}
+
+.btn {
+    background-color: white !important;
+    color: black !important;
+}
+
+a:hover {
+    background-color: #7db6c5 !important;
+    color: white !important;
 }
