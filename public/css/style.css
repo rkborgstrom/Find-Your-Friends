@@ -33,7 +33,7 @@ h6 {
 .center {
     color: white;
     height: 120px;
-    background-color: rgb(32, 51, 77);
+    background-color: #414b5d;
     opacity: 0.9;
     padding-top: 10px;
 }
@@ -77,4 +77,10 @@ h6 {
 a:hover {
     background-color: #4da3be !important;
     color: white !important;
+}
+
+.message {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
 }
