@@ -82,5 +82,5 @@ a:hover {
 .message {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
+    width: 300px;
 }
