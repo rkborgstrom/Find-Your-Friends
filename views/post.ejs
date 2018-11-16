@@ -18,12 +18,10 @@
         <input type="text" class="form-control" id="full_name" placeholder="e.g. John Doe" name="full_name" required>
       </div>
 
-      
       <div class="col-md-4 mb-3">
         <label for="mountain">Mountain</label>
         <input type="text" class="form-control" id="mountain" placeholder="e.g. Breckenridge" name="mountain" required>
       </div>
-
 
       <div class="col-md-4 mb-3">
         <label for="phone_number">Phone Number</label>
@@ -31,7 +29,6 @@
           required>
       </div>
     </div>
-
 
     <div class="form-row">
       <div class="col-md-6">
@@ -44,7 +41,6 @@
         <input type="date" class="form-control" id="date" name="date" placeholder="Date" required>
       </div>
     </div>
-
 
     <div class="form-row">
       <label for="time">What time are you leaving?</label>
@@ -66,11 +62,15 @@
     </div>
 
     <div class="form-row">
-        <label for="insta">Instagram</label>
-        <input type="text" class="form-control" id="insta" name="insta">
+      <label for="insta">Instagram</label>
+      <input type="text" class="form-control" id="insta" name="insta">
+    </div>
+
+    <div class="form-row">
+        <label for="date">Today's Date:</label>
+        <input type="date" class="form-control" id="today" name="today" placeholder="Date" required>
       </div>
-
-
+    </div>
 
     <hr>
     <button class="btn btn-primary" type="submit">Send it</button>
@@ -80,6 +80,5 @@
 </section>
 </form>
 </section>
-
 
 <% include partials/footer %>

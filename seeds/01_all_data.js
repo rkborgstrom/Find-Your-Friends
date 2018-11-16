@@ -12,7 +12,8 @@ exports.seed = function (knex, Promise) {
         date: '11/09/2018',
         time: '5:20',
         phone_number: '815-341-6665',
-        insta: '_r_y_a_n_b_'
+        insta: '_r_y_a_n_b_',
+        today: '11/14/2018'
       },
       {
         full_name: 'Rick Steves',
@@ -23,7 +24,8 @@ exports.seed = function (knex, Promise) {
         date: '11/09/2018',
         time: '6:45',
         phone_number: '815-784-3443',
-        insta: 'ricksteveseurope'
+        insta: 'ricksteveseurope',
+        today:'11/16/2018'
       }
     ]);
     });

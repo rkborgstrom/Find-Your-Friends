@@ -12,9 +12,8 @@ const morgan = require('morgan');
 const index = require('./routes/index');
 const post = require('./routes/post');
 var moment = require('moment');
-var shortDateFormat = "ddd @ h:mmA";
-app.locals.moment = moment;
-app.locals.shortDateFormat = shortDateFormat;
+
+
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');

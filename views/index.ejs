@@ -90,13 +90,12 @@
                   <hr>
                   <strong>Message:</strong>
                   <%= data.message %>
-                  <hr>
+      
                 </h5>
               </section>
             </section>
-            <hr>
             <section class="moment pl-4"> Posted:
-              <%= moment().startOf('day').fromNow();  %>
+              <%= data.today.toDateString() %>
             </section>
             <hr>
           </section>
