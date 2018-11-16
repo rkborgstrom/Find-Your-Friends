@@ -84,3 +84,7 @@ a:hover {
     flex-wrap: wrap;
     width: 300px;
 }
+
+.moment {
+    color: darkgray;
+}
